@@ -18,10 +18,11 @@ from meshplot import plot
 import numpy as np
 import time
 
+wd = os.getcwd()
 
 
 # mx.set_default_device(mx.cpu)  # force all ops to run on CPU
-workdir = "/Users/navdeepsinghbedi/Cage-based-dynamic-mesh-compression/Dynamic mesh codec for mac v2"
+workdir = f"{wd}/Dynamic mesh codec for mac v2"
 
 
 action = "jumping"  # Change this to the desired action

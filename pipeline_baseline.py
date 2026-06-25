@@ -16,7 +16,7 @@ import time
 
 
 
-cwd = os.getcwd()
+wd = os.getcwd()
 
 action = "jumping"  # Change this to the desired action
 alpha = 0.25 # This can be adjusted as needed
@@ -81,7 +81,7 @@ def run_laplace_mesh_codec(
 
 
 
-workdir = f"{cwd}/Dynamic mesh codec for mac v2"
+workdir = f"{wd}/Dynamic mesh codec for mac v2"
 exe = f"{workdir}/LaplaceMeshCodec"
 
 x = time.time()
