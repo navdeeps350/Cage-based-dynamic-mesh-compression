@@ -24,7 +24,11 @@ from numba import types
 import time
 
 # mx.set_default_device(mx.cpu)  # force all ops to run on CPU
-workdir = "/Users/navdeepsinghbedi/Cage-based-dynamic-mesh-compression/Dynamic mesh codec for mac v2"
+wd = os.getcwd()
+
+
+# mx.set_default_device(mx.cpu)  # force all ops to run on CPU
+workdir = f"{wd}/Dynamic mesh codec for mac v2"
 
 
 action = "jumping"  # Change this to the desired action
