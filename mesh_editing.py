@@ -10,8 +10,8 @@ import igl
 action = "jumping"  # Change this to the desired action
 
 
-mesh_vertices_original, mesh_faces_original = igl.read_triangle_mesh("avg_meshes/jumpingAvg_original.obj")
-cage_vertices_original, cage_faces_original = igl.read_triangle_mesh("avg_meshes/jumpingAvg_cage.obj")
+mesh_vertices_original, mesh_faces_original = igl.read_triangle_mesh(f"avg_meshes/{action}Avg_original.obj")
+cage_vertices_original, cage_faces_original = igl.read_triangle_mesh(f"avg_meshes/{action}Avg_cage.obj")
 
 
 mvc = compute_mvc(mesh_vertices_original, cage_vertices_original, cage_faces_original)
@@ -42,7 +42,7 @@ for filename in os.listdir(input_folder):
 
 
 
-mesh_vertices_modified, mesh_faces_modified = igl.read_triangle_mesh("avg_meshes/jumpingAvg_modified.obj")
+mesh_vertices_modified, mesh_faces_modified = igl.read_triangle_mesh(f"avg_meshes/{action}Avg_modified.obj")
 
 
 mvc_modified = compute_mvc(mesh_vertices_modified, cage_vertices_original, cage_faces_original)
