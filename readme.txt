@@ -12,13 +12,13 @@ Add the {action}_mesh (folder contains mesh sequence in .obj format named mesh_0
 and {action}_mesh_off (folder contains mesh sequence in .off format named mesh_0001.off - mesh_000n.off) 
 folder to the original_meshes folder.
 
-To run our pipeline, run pipeline_our.py file by providing the following arguments:
+To run our pipeline, run pipeline_our_BLAS.py file by providing the following arguments:
 action: name of the action (e.g., jumping, bouncing, etc.)
 alpha (GLencoder parameter): a float value between starting from 0.25 to 6.0 with step size of 0.25
 parameter_avg_mesh (average mesh encoding parameter): a float value like 0.001
-Now you can run the pipeline_our.py file.
+Now you can run the pipeline_our_BLAS.py file.
 
-After running the pipeline_our.py file for all the parameters alpha, you need to remove the residual files.
+After running the pipeline_our_BLAS.py file for all the parameters alpha, you need to remove the residual files.
 Run the remove_residuals.py file.
 
 To run the baseline pipeline, run pipeline_baseline.py file by providing the following arguments:

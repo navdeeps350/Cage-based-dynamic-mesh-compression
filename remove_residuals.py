@@ -2,7 +2,7 @@ import os
 import shutil
 
 
-action = "jumping"
+action = "bouncing"
 
 
 # for pipeline_ours.py
