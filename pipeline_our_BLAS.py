@@ -31,8 +31,8 @@ wd = os.getcwd()
 workdir = f"{wd}/Dynamic mesh codec for mac v2"
 
 
-action = "bouncing"  # Change this to the desired action
-alpha = 2.75 # This can be adjusted as needed
+action = "jumping"  # Change this to the desired action
+alpha = 0.25 # This can be adjusted as needed
 parameter_avg_mesh = 0.001  # This can be adjusted as needed
 
 alpha_str = str(alpha).replace(".", "_")
